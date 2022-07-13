@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Insert</title>
+    <script>
+        // let arr = [120,100,80,40,20,10];
+        // let position = 3;
+        // let newElem = 60;
+        // console.log(arr)
+        // for(let i = arr.length-1; i>0; i--){
+        //     // document.write(`${arr[i]} <br>`)
+        //     if( i>=position){
+        //         arr[i+1]=arr[i]
+        //         if(i == position){
+        //             arr[i] = newElem;
+        //         }
+        //     }
+        //     document.write(arr[i])
+        // }
+        function getElemetposition() {
+            let arr = [120, 100, 80, 40, 20, 0]
+            let newElem = document.getElementById('elementID').value;
+            let newPosition = document.getElementById('positionID').value;
+            console.log(arr);
+
+            for (let i = arr.length - 1; i > 0; i--) {
+                // document.write(`${arr[i]} <br>`)
+                if (i >= newPosition) {
+                    arr[i + 1] = arr[i]
+                    if (i == newPosition) {
+                        arr[i] = newElem;
+                    }
+                }
+                document.write(arr[i])
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Array Insert</h1>
+    <input type="text" id="positionID" placeholder="position"></input>
+    <input type="text" id="elementID" placeholder="element"></input>
+    <button onclick="getElemetposition()">Enter element and position</button>
+</body>
+
+</html>

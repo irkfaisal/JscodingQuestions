@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>array search</title>
+    <script>
+        function getDeleteItem() {
+            let arr = [100, 25, 40, 65, 55, 50];
+            let searchItem = document.getElementById('searchElem').value;
+            let index = undefined;
+            console.log(arr)
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === parseInt(searchItem)) {
+                    index = i;
+                    break;
+                }
+            }
+            console.log(index)
+        }
+        // let arr = [100,25,40,65,55,50];
+        // let searchItem = 40;
+        // let index = undefined;
+        // for(let i = 0; i<arr.length; i++){
+        //     if(arr[i] === searchItem){
+        //         index = i;
+        //     }   
+        // }
+        // console.log(index)
+        // another methods to serach items
+        // console.log(arr.indexOf(searchItem));
+        // console.log(arr.splice(2, 1));
+    </script>
+</head>
+
+<body>
+    <input type="text" id="searchElem" placeholder="search item"></input>
+    <button onclick="getDeleteItem()">Get Element</button>
+</body>
+
+</html>

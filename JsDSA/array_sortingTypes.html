@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // There are two approaches to sort the number array in ascending order. 
+
+
+    // Using Compare Function
+    // By Creating Loops
+    
+    
+    // sorting of an array using Using Compare Function
+    // This example uses compare function to sort the array elements in ascending order.
+    // Declare and initialize an Array -->
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    // ascending order
+    let arr = [4, 5, 2, 1, 3];
+    document.write("original array");
+    document.write(arr)
+    document.write("<br>")
+    // soting element using compare method
+    arr.sort(
+        function (a, b) {
+            return (a - b)
+        }
+    )
+    document.write("sorted array" + arr);
+    document.write("<br>")
+
+    // descending order
+     arr.sort(
+        function(a,b){
+            return (b-a)
+        }
+     )
+     document.write("sorted array" +arr)
+
+</script>

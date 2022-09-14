@@ -1,3 +1,49 @@
+
+
+// create object using object literals
+const x = {
+    name: "Hello",
+    age :20,
+    city: ["Kolkata", 20],
+    greet: function() {
+        console.log("Good morning")
+    },
+    student:{
+        class:"IV",
+        roll: 001
+    }
+};
+x.greet();
+console.log(x.student.roll)
+
+// create an object using instance of object
+const x1 = new object({
+    name1: "Hello",
+    age1 :20,
+    city1: ["Kolkata", 20],
+    greet1: function() {
+        console.log("Good morning")
+    },
+    student1:{
+        class1:"IV",
+        roll1: 001
+    }
+})
+
+// create an object using constructor
+function x2(){
+   this.name2= "Hello",
+    this.age2 =20,
+    this.city2= ["Kolkata", 20],
+    this.greet2= function() {
+        console.log("Good morning")
+    },
+    this.student2={
+        class2:"IV",
+        roll2: 001
+    } 
+}
+const  x2= new x2();
 // create an empty object
 const obj = {};
 console.log(obj);
